@@ -1,0 +1,5 @@
+
+
+"NSAudioCaptureUsageDescription" = "在内存中衰减这台 Mac 当前输出的音频。不读取物理麦克风，不保存音频。";
+
+"NSBluetoothAlwaysUsageDescription" = "显示已配对的蓝牙耳机和音箱，并在你选择后连接设备、切换音频输出。";

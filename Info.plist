@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Ez Audio Control</string>
+	<key>CFBundleExecutable</key>
+	<string>SimpleAudioControl</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>local.SimpleAudioControl</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>zh-Hans</string>
+	</array>
+	<key>CFBundleName</key>
+	<string>Ez Audio Control</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1.44</string>
+	<key>CFBundleVersion</key>
+	<string>45</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+<key>NSAudioCaptureUsageDescription</key>
+<string>Attenuate audio on the current output in memory. 100% is the original incoming audio; 0% is silence. No physical microphone is opened and no audio is saved.</string>
+<key>NSBluetoothAlwaysUsageDescription</key>
+<string>Show your paired Bluetooth headphones and speakers, and connect the device you select as the audio output.</string>
+</dict>
+</plist>

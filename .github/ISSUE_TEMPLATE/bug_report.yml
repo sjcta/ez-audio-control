@@ -1,0 +1,23 @@
+name: Bug report / 问题反馈
+description: Report a reproducible volume or interface issue.
+body:
+  - type: markdown
+    attributes:
+      value: Please exclude full system logs, serial numbers, audio recordings and credentials. / 请勿提交完整系统日志、序列号、录音或凭据。
+  - type: input
+    id: version
+    attributes:
+      label: App and macOS version / 应用与系统版本
+    validations:
+      required: true
+  - type: input
+    id: output
+    attributes:
+      label: Output type and connection / 输出类型与连接方式
+      placeholder: Built-in speaker, Bluetooth, USB, HDMI or DisplayPort
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps, expected result and actual result / 步骤、预期与实际结果
+    validations:
+      required: true

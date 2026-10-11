@@ -1,0 +1,5 @@
+
+
+"NSAudioCaptureUsageDescription" = "Attenuate this Mac’s audio on the current output in memory. No physical microphone is opened and no audio is saved.";
+
+"NSBluetoothAlwaysUsageDescription" = "Show your paired Bluetooth headphones and speakers, and connect the device you select as the audio output.";

@@ -1,0 +1,230 @@
+"%@ 运行中；Ez Audio Control 优先接管可到达的音量指令" = "%@ is running; Ez Audio Control handles volume commands it receives";
+"%@：CGEventTapCreate=nil（API未提供错误码）" = "%@: CGEventTapCreate=nil (no error code provided)";
+"%@：创建成功，启用=%@" = "%@: created, enabled=%@";
+"HUD 模式" = "HUD mode";
+"Ez Audio Control %@\nmacOS %@\n控制方式：%@\n控制许可：%@\n音量键：%@\n设备状态：%@" = "Ez Audio Control %@\nmacOS %@\nControl: %@\nPermission: %@\nVolume keys: %@\nDevice: %@";
+"仅在菜单栏图标旁显示数字" = "Show numbers beside the menu bar icon only";
+"仅复制到剪贴板，未发送。内容不含设备名称、文件路径或日志。" = "Copied to the clipboard only. Nothing was sent. No device names, file paths or logs are included.";
+"仅显示顶部 HUD，菜单栏只保留图标" = "Show the top HUD with just an icon in the menu bar";
+"以下为本应用复用代码的完整许可。版权归各原作者所有。" = "Full licenses for adapted code used in this app. Copyright remains with the original authors.";
+"允许系统音量指令控制" = "Allow volume key control";
+"允许音量键控制…" = "Allow volume key control…";
+"关于" = "About";
+"声音设置…" = "Sound Settings…";
+"关闭" = "Close";
+"写入后读回不一致，可能有其他控制器同时操作" = "Readback did not match; another controller may be active";
+"可用或正在连接" = "Available or connecting";
+"同时显示顶部 HUD 和菜单栏数字" = "Show both the top HUD and menu bar numbers";
+"复制支持信息" = "Copy support info";
+"完成" = "Done";
+"完整模式" = "Full mode";
+"尚未尝试" = "Not attempted";
+"已允许" = "Allowed";
+"已启用%@/3阶段" = "Enabled %@/3 stages";
+"已连接" = "Connected";
+"已静音" = "Muted";
+"开发版" = "Development";
+"开发版本 %@\n\n轻量的 macOS 菜单栏音量工具。\n由 Ez Studio（Jeson）开发；软件音量模式通过 CoreAudio process tap 在内存中衰减当前输出，无需安装驱动，不读取物理麦克风，不保存音频。排错记录仅保存在本机，不自动上传。\n\n版权声明\n新增内容的权利归相应权利人；复用代码的版权归原作者，并保留其原始许可。\n\n本项目新增代码采用 MIT 许可；DDC 桥接改编自 m1ddc、MonitorControl（MIT）。\n应用图标采用 AI 辅助生成设计。" = "Development version %@\n\nA lightweight macOS menu bar volume tool.\nDeveloped by Ez Studio (Jeson). Software volume attenuates the current output in memory using a CoreAudio process tap. No driver is installed, no physical microphone is opened, and no audio is saved. Troubleshooting logs stay on this Mac and are not uploaded automatically.\n\nCopyright\nNew contributions belong to their respective rights holders. Adapted code retains its original copyright and license.\n\nOriginal project code is MIT-licensed. The DDC bridge adapts m1ddc and MonitorControl (MIT).\nThe app icon uses an AI-assisted design.";
+"开机启动" = "Launch at login";
+"开机启动设置失败：%@" = "Could not change launch at login: %@";
+"开源许可" = "Open-source licenses";
+"当前输出使用系统原生音量控制" = "This output uses native system volume control";
+"当前输出暂不支持调节" = "This output does not currently support volume adjustment";
+"当前输出由系统控制；已交回原生音量键" = "System controls this output; native volume keys restored";
+"打开%@设置" = "Open %@ settings";
+"打开系统设置" = "Open System Settings";
+"操作失败" = "Operation failed";
+"操作失败：%@；已重新读取，可重试" = "Operation failed: %@. Current volume was read again; you can retry.";
+"支持信息已复制" = "Support info copied";
+"数字模式" = "Numbers mode";
+"无法读取输出设备" = "Could not read output devices";
+"日志写入失败 code=%@" = "Log write failed code=%@";
+"显示器" = "Display";
+"显示器休眠；唤醒后重新读取" = "Display asleep; volume will be read after waking";
+"显示器音量" = "Volume";
+"显示器音量百分比" = "Volume percentage";
+"显示模式" = "Display mode";
+"暂时无法调节音量" = "Volume control is temporarily unavailable";
+"未允许" = "Not allowed";
+"未能切换音频输出" = "Could not switch audio output";
+"未连接" = "Disconnected";
+"未静音" = "Not muted";
+"正在创建事件监听" = "Creating event listeners";
+"正在检测显示器…" = "Detecting displays…";
+"正在读取当前音量…" = "Reading current volume…";
+"正在读取显示器…" = "Reading display…";
+"正在连接音频设备" = "Connecting to audio device";
+"没有可用输出设备" = "No output devices available";
+"没有可访问的 DDC 显示器" = "No accessible DDC displays";
+"没有可访问的显示器" = "No accessible displays";
+"目标或音量意图已改变，已取消写入" = "Target or requested volume changed; write cancelled";
+"目标音量 %@，等待设备确认" = "Target volume %@; waiting for device confirmation";
+"稍后" = "Later";
+"系统" = "System";
+"系统停用了事件监听" = "System disabled the event listener";
+"系统未确认输出切换，请重试" = "System did not confirm the output change; please retry";
+"系统设置 → %@ → %@。请允许 Ez Audio Control 使用音量键。若已允许但仍无法使用，可从“关于”复制支持信息。" = "System Settings → %@ → %@. Allow Ez Audio Control to use volume keys. If already allowed but still unavailable, copy support info from About.";
+"系统音量指令" = "System volume commands";
+"系统音量指令（待授权）" = "System volume commands (permission needed)";
+"系统音量操作失败（%@）" = "System volume operation failed (%@)";
+"系统音频" = "System audio";
+"解除静音" = "Unmute";
+"许可文件缺失，请重新安装完整应用。" = "License file missing. Please reinstall the complete app.";
+"设备控制和数据访问" = "Device Control and Data Access";
+"设置" = "Settings";
+"请在系统设置中允许音量键控制；音量滑杆仍可使用" = "Allow volume key control in System Settings; the slider remains available";
+"请在系统设置中批准登录项" = "Approve the login item in System Settings";
+"请在系统设置的%@中允许 Ez Audio Control 使用音量键。未允许时仍可使用音量滑杆。" = "Allow Ez Audio Control to use volume keys in System Settings → %@. The slider remains available without this permission.";
+"请检查音频设备连接。使用显示器时，请确认已开启 DDC/CI，然后在设置中重新检测。" = "Check the audio device connection. For a display, enable DDC/CI and detect displays again in Settings.";
+"请确认已选择可用输出设备。部分设备不支持软件音量控制；你仍可使用设备自身的音量按钮。" = "Select an available output. Some devices do not support software volume control; use their physical volume buttons instead.";
+"请选择目标，读取成功后才可调节" = "Select a display; controls become available after a successful read";
+"调节失败" = "Adjustment failed";
+"调节失败；请在设置中查看详情" = "Adjustment failed; see Settings for details";
+"辅助功能" = "Accessibility";
+"辅助功能检查=false；未创建事件监听" = "Accessibility check=false; no event listener created";
+"返回" = "Back";
+"这个输出设备已断开，请重新选择" = "This output disconnected; please select another";
+"退出" = "Quit";
+"重新检测" = "Detect again";
+"重新检测显示器" = "Detect displays again";
+"隐私与安全" = "Privacy & Security";
+"隐私与安全性" = "Privacy & Security";
+"静音" = "Muted";
+"音量" = "Volume";
+"音量 %@" = "Volume %@";
+"音量事件监听未能启动；滑杆仍可用" = "Volume listener could not start; the slider remains available";
+"音量可调；显示器未提供静音状态" = "Volume available; display does not report mute state";
+"音量可调；静音状态不可读" = "Volume available; mute state cannot be read";
+"音量控制" = "Volume control";
+"音量控制已暂停，等待唤醒" = "Volume control paused until waking";
+"音量控制需要检查" = "Check volume control";
+"音量范围改变，已取消写入" = "Volume range changed; write cancelled";
+"音量调节音效" = "Volume feedback sound";
+"音量键暂不可用" = "Volume keys are unavailable";
+"音频输出操作失败（%@）" = "Audio output operation failed (%@)";
+"；请重新检测" = "; detect again to retry";
+"微信支付" = "WeChat Pay";
+"支付宝" = "Alipay";
+"打开赞助网站" = "Open support website";
+"%@ 收款二维码" = "%@ payment QR code";
+"无法打开赞助网站" = "Could not open the support website";
+"外接显示器" = "External display";
+"只允许音量或静音操作" = "Only volume or mute commands are allowed";
+"DDC 0x%02X 读取失败（0x%08X）：请检查连接与 DDC/CI" = "DDC 0x%02X read failed (0x%08X): check the connection and DDC/CI";
+"无效音量命令" = "Invalid volume command";
+"DDC 写入失败（0x%08X）" = "DDC write failed (0x%08X)";
+"请我喝杯咖啡" = "Buy me a coffee";
+"如果 Ez Audio Control 让你每天调音量少一点折腾，欢迎请我喝杯咖啡，支持兼容性测试和持续维护。赞助完全自愿，所有功能都可以使用。外部网站和支付服务适用其各自的隐私政策。" = "If Ez Audio Control makes daily volume adjustments easier, you are welcome to buy me a coffee and support compatibility testing and ongoing maintenance. Support is optional; all features remain available. External websites and payment services have their own privacy policies.";
+
+/* Optional software volume mode */
+"软件音量组件未安装、版本不兼容或暂未就绪" = "Software volume component is missing, incompatible, or not ready";
+"请选择可用的双声道物理输出，不能选择虚拟或聚合设备" = "Select an available stereo physical output; virtual and aggregate devices are not supported";
+"系统未确认音频路由；软件输出保持静音" = "Audio routing was not confirmed; software output remains muted";
+"软件音量已安全暂停，请暂停播放后重新启用" = "Software volume is paused; pause playback before enabling it again";
+"软件音量模式" = "Software volume mode";
+"正在切换音频输出…" = "Switching audio output…";
+"重新检测音频设备" = "Detect audio devices again";
+"当前输出没有可用的音量控制，可在设置中选择软件音量模式" = "This output has no available volume control. Software volume mode is available in Settings.";
+"已连接兼容组件 · 协议 1" = "Compatible component connected · Protocol 1";
+"需要 Ez Software Audio 组件 1.0.0" = "Requires Ez Software Audio component 1.0.0";
+"启用软件音量（首次静音）" = "Enable software volume (starts muted)";
+"实际声音输出" = "Physical audio destination";
+"系统提示音也经过软件音量" = "Route system alerts through software volume";
+"暂停播放后恢复原输出…" = "Restore previous outputs after pausing playback…";
+"组件与安全说明…" = "Component and safety details…";
+"请选择实际声音输出，再启用软件音量" = "Select a physical destination before enabling software volume";
+"正在准备静音的软件输出…" = "Preparing muted software output…";
+"先暂停所有音频播放" = "Pause all audio playback first";
+"恢复物理输出会绕过软件衰减。请先暂停播放并降低外部音箱音量。只恢复仍由本模式占用的输出，保留你后来更改的设备选择。" = "Restoring physical outputs bypasses software attenuation. Pause playback and lower your external speaker volume first. Only routes still owned by this mode are restored; later device choices are preserved.";
+"已暂停，恢复原输出" = "Playback paused — restore outputs";
+"可选的软件音量组件" = "Optional software volume component";
+"需要单独安装 Ez Software Audio 1.0.0（协议 1），原版 Proxy Audio Device 不兼容。应用不会自动安装或请求录音许可。仅支持双声道 Float32 物理输出；其他虚拟、聚合和多声道设备不可作目标。首次启用为 0% 且静音；主动调高音量才发声。退出、休眠或失联后保持静音，不自动恢复物理输出。驱动或系统音频服务崩溃时，macOS 仍可能直接回退硬件输出，无法保证无旁路音频。安装、卸载、恢复前须暂停播放并降低音箱音量。只控制这台 Mac 经过虚拟输出的音频，不控制光纤切换器的其他来源。" = "Ez Software Audio 1.0.0 (protocol 1) requires a separate installation; the original Proxy Audio Device is incompatible. This app never installs it automatically or requests recording permission. Only stereo Float32 physical destinations are supported, excluding virtual, aggregate, and multichannel devices. Activation starts at 0% and muted; increase volume explicitly to hear audio. Quit, sleep, or lost contact leaves the software path muted without restoring physical outputs. If the driver or system audio service crashes, macOS may fall back directly to hardware: bypass audio cannot be ruled out. Pause playback and lower speaker volume before installation, removal, or restoration. This controls only this Mac’s audio routed through the virtual device, not other sources on an optical switch.";
+
+"软件模式需要音频输入许可；请先使用单独的授权入口，再明确启用" = "Software mode requires audio input permission. Use the separate permission action, then explicitly enable it.";
+
+"已连接兼容组件 · 协议 2" = "Compatible component connected · Protocol 2";
+
+"需要 Ez Software Audio 组件 2.0.0" = "Ez Software Audio 2.0.0 required";
+
+"音频输入权限…" = "Audio input permission…";
+
+"软件模式的音频输入权限" = "Audio input permission for software mode";
+
+"软件模式从虚拟设备接收这台 Mac 的音频，再输出到指定硬件。macOS 可能将其列为麦克风权限；不读取物理麦克风，不保存录音。许可只在你点击请求后申请，完成后仍须单独启用软件模式。" = "Software mode receives this Mac’s audio from a virtual device and forwards it to your selected hardware. macOS may list this as microphone permission. It does not read a physical microphone or save recordings. Permission is requested only after your click; you must enable software mode separately afterward.";
+
+"请求音频输入权限" = "Request audio input permission";
+
+"音频输入已允许，请单独启用软件模式" = "Audio input is allowed. Enable software mode separately.";
+
+"音频输入未允许，软件模式保持关闭" = "Audio input is not allowed. Software mode remains off.";
+
+"请在系统设置的麦克风权限中检查 Ez Audio Control；软件模式保持关闭" = "Check Ez Audio Control under Microphone in System Settings. Software mode remains off.";
+
+"需要单独安装 Ez Software Audio 2.0.0（协议 2）。旧 1.0.0 组件不可安装。插件仅提供虚拟回环，实际硬件由 App 内客户端输出，无辅助进程或后台服务。仅支持 48 kHz、交错 Float32 双声道及不超过 1024 帧的设备缓冲。首次启用为 0% 且静音；主动调高音量才发声。音频输入权限须单独明确申请，完成后不自动接管。退出、休眠或失联后保持静音；恢复输出前须暂停播放并降低音箱音量。系统音频服务崩溃时 macOS 仍可能回退硬件，不能保证无旁路音频。只控制这台 Mac 经过虚拟输出的音频。" = "Requires a separate Ez Software Audio 2.0.0 installation (protocol 2). Do not install the old 1.0.0 component. The plug-in provides virtual loopback; an in-app client outputs to hardware, with no helper or background service. Supports only 48 kHz interleaved Float32 stereo and device buffers up to 1024 frames. Initial volume is 0% and muted. Audio input permission requires a separate explicit request and never enables routing automatically. Quit, sleep, or lost connection mutes the path. Pause playback and lower speaker volume before restoring output. An audio service crash may cause macOS to fall back to hardware; bypass audio cannot be ruled out. Only this Mac’s audio routed through the virtual output is controlled.";
+
+"纯软件衰减尚待真实音频链路验收；此候选不会申请捕获权限" = "Software attenuation awaits live audio validation; this candidate will not request capture permission.";
+
+"当前输出不支持已验证的软件音频格式" = "The current output does not support a validated software audio format.";
+
+"软件增益必须是 0% 至 100% 的有限数值" = "Software gain must be a finite value from 0% to 100%.";
+
+"软件衰减已暂停；请先暂停播放，再退出软件模式" = "Software volume is paused. Detect audio devices again or restart the App.";
+
+"100% 原始电平 · 0% 静音 · 不改变硬件音量" = "100% original level · 0% silence · Hardware volume unchanged";
+
+"启用纯软件衰减" = "Enable software attenuation";
+
+"暂停播放后退出软件模式…" = "Pause playback, then leave software mode…";
+
+"纯软件衰减说明…" = "About software attenuation…";
+
+"退出软件衰减后，原始音频可能恢复播放。请先暂停播放；退出不会调低硬件音量。" = "Original audio may resume when software attenuation ends. Pause playback first; exiting does not lower hardware volume.";
+
+"已暂停，退出软件模式" = "Playback paused; quit App";
+
+"纯软件衰减" = "Software attenuation";
+
+"当前输出没有可用的音量控制；纯软件衰减尚待验收" = "No volume control is available for this output; software attenuation awaits validation.";
+
+"软件衰减 %@，100% 原始电平，0% 静音" = "Software attenuation %@; 100% original level, 0% silence";
+
+"软件衰减；100% 原始电平，0% 静音" = "Software attenuation; 100% original level, 0% silence";
+
+"100% 表示进入软件处理的原始音频，0% 表示静音；只向下衰减，不读取硬件百分比作为基准，也不写硬件音量。音量变化经过约 5 毫秒平滑过渡，随后 0% 精确为零。此候选使用 Apple 音频 tap 原型，无需独立 HAL 驱动；尚未通过真实链路验收，启用入口已禁用，不会申请系统音频捕获权限。仅规划接管当前输出的一个 PCM 流；其它设备、受保护内容、独占或绕过路径不作保证。退出或崩溃后原始音频可能恢复，软件电平不等于实际声压。" = "100% is the original audio entering software processing; 0% is silence. Gain only attenuates and never uses a hardware percentage as calibration or writes hardware volume. Changes ramp over about 5 ms, after which 0% is exactly zero. This Apple audio tap prototype needs no separate HAL driver. Live validation is pending, so activation is disabled and no system audio capture permission will be requested. The planned scope is one PCM stream on the current output. Other devices, protected content, exclusive output and bypass paths are not guaranteed. Original audio may resume on exit or crash. Signal level is not sound pressure.";
+"尚待真实音频验收 · 此候选不可启用" = "Live audio validation pending · Unavailable in this candidate";
+
+"请先确认本次系统音频处理与安全播放范围" = "Confirm this session’s system audio processing and safe playback conditions first.";
+
+"此系统或当前输出不支持软件衰减" = "Software attenuation is unavailable on this system or output.";
+
+"软件音频启动或运行失败（阶段 %@，状态 %@）；请暂停播放后退出软件模式" = "Software audio failed (stage %@, status %@). Detect audio devices again or restart the App.";
+
+"系统不可调时自动启用 · 沿用参考音量" = "Automatic when system volume is unavailable · Uses reference level";
+
+"请先退出其它 Ez Audio Control 实例，再启用软件衰减" = "Quit other Ez Audio Control instances before enabling software attenuation.";
+
+"启用本次软件衰减" = "Enable software attenuation for this session";
+
+"将处理当前输出 %@ 的系统音频。macOS 可能请求系统音频录制权限；不读取物理麦克风，不保存音频。请先暂停所有播放，确认外部音箱已处于安全音量。继续后原流会被静音，软件增益从 0% 开始；退出或崩溃后原始音频可能恢复。只有选择继续才会创建音频 tap。" = "This will process system audio on the current output, %@. macOS may request system audio recording permission. No physical microphone is opened and no audio is saved. Pause all playback and confirm a safe external speaker level first. Continuing mutes the original stream and starts software gain at 0%. Original audio may resume on exit or crash. An audio tap is created only after you choose to continue.";
+
+"已暂停，允许本次处理" = "Playback paused; allow this session";
+
+"正在准备系统音频处理" = "Preparing system audio processing";
+
+"等待有效音频帧" = "Waiting for valid audio frames";
+
+"未知" = "Unknown";
+
+"100% 表示进入处理的原始 PCM，0% 在约 5 毫秒平滑过渡后精确静音；不会标定或改变硬件音量。无需独立 HAL 驱动。当前输出没有系统音量控制时自动启用，手动启用也无需二次确认；首次系统音频许可仍由 macOS 决定。只有收到有效音频帧后才能调节。当前设备的真实听感尚待验收；其它设备、受保护内容、独占或绕过路径不作保证。退出或崩溃后原始音频可能恢复，PCM 电平不等于实际声压。" = "100% is the original incoming PCM. 0% is exact silence after a smooth transition of about 5 ms. Hardware volume is never calibrated or changed. No separate HAL driver is needed. Starts automatically when the current output has no system volume control. Manual activation needs no second confirmation; macOS still controls the initial system audio permission. Adjustment becomes available only after valid audio frames arrive. Listening tests on the actual device are still pending. Other devices, protected content, exclusive output and bypass paths are not guaranteed. Original audio may resume on exit or crash. PCM level is not sound pressure.";
+
+// Paired Bluetooth audio devices
+"%@ — 正在连接…" = "%@ — Connecting…";
+"%@ — 音频未就绪" = "%@ — Audio not ready";
+"%@ — 未连接" = "%@ — Not connected";
+"配对蓝牙设备…" = "Pair Bluetooth Device…";
+"显示蓝牙音频设备…" = "Show Bluetooth Audio Devices…";
+"允许蓝牙访问…" = "Allow Bluetooth Access…";
+"请允许蓝牙访问后再连接音频设备" = "Allow Bluetooth access before connecting an audio device.";
+"这个蓝牙音频设备已不在配对列表中" = "This Bluetooth audio device is no longer paired.";
+"无法连接蓝牙音频设备（%@）" = "Could not connect to the Bluetooth audio device (%@).";
+"蓝牙设备未能及时成为音频输出，请检查设备后重试" = "The Bluetooth device did not become an audio output in time. Check the device and try again.";

@@ -1,0 +1,24 @@
+name: Build and offline checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline:
+    # macOS 27 SDK is required; this documented image is currently a preview.
+    runs-on: xcode-27
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Build local development App
+        run: ./scripts/build.sh --adhoc
+      - name: Run offline tests without audio or device writes
+        run: ./scripts/test-offline.sh
