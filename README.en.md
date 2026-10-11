@@ -6,6 +6,18 @@ A lightweight macOS menu bar volume control for your current audio output, with 
 
 [简体中文](README.md) · [MIT license](LICENSE) · [Privacy](PRIVACY.md) · [Contributing](CONTRIBUTING.md)
 
+## Why I built this
+
+**After connecting my Mac mini to a monitor, I could no longer adjust the macOS system volume.** That is the fundamental reason I built Ez Audio Control.
+
+Audio played normally, but the familiar volume keys, mouse volume actions and system volume control were unavailable. This one everyday frustration is what I wanted to solve.
+
+Many existing tools can solve it and offer powerful display management or audio processing features. Someone who only wants volume control back may not need those extras, or want to buy a whole application just for that one purpose.
+
+So I decided to build a **free, open-source tool focused on volume control and kept as lightweight as possible**. The goal is to make this small task simple again: connect a monitor and keep adjusting volume with familiar keys, mouse actions and a menu bar slider.
+
+See [community discussions and common approaches (Chinese)](Docs/BACKGROUND.md). Free alternatives already exist; this project aims to offer a lightweight choice focused on this one problem.
+
 ## Features
 
 - Left-click for volume and output devices, with a separate Sound Settings entry at the bottom.
