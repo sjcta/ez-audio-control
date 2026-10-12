@@ -8,11 +8,11 @@ Ez Audio Control 是一个**免费、开源、专注音量控制**的 macOS 菜�
 
 [English](README.en.md) · [MIT 许可](LICENSE) · [隐私说明](PRIVACY.md) · [参与开发](CONTRIBUTING.md)
 
-**[下载 1.0.0 DMG（Apple Silicon）](https://github.com/sjcta/ez-audio-control/releases/download/v1.0.0/Ez-Audio-Control-1.0.0-arm64.dmg)** · [版本说明](https://github.com/sjcta/ez-audio-control/releases/tag/v1.0.0)
+**[下载 1.0.0 DMG（Apple Silicon）](https://github.com/sjcta/ez-audio-control/releases/download/v1.0.0/Ez-Audio-Control-1.0.0-arm64-notarized.dmg)** · [版本说明](https://github.com/sjcta/ez-audio-control/releases/tag/v1.0.0)
 
 要求 **Apple Silicon Mac + macOS 14.0 或以上**；外接显示器等不可原生调音量的输出需要 **macOS 14.2 或以上** 才能尝试软件音量。Intel Mac 和 macOS 13 或更早版本不支持。
 
-> DMG 内 App 使用 Developer ID 签名，**尚未经过 Apple 公证**；首次打开可能被 macOS 安全检查拦截。安装前查看下面的运行要求与验证范围。
+> **公证版 DMG 与内含 App 均已通过 Apple 公证并附加票据**，沿用 Developer ID 签名。首次打开仍可能出现正常的互联网下载确认；公证不代替功能与兼容性验收，安装前查看下面的运行要求与验证范围。
 
 ## 能做什么
 
@@ -53,7 +53,7 @@ Ez Audio Control 是一个**免费、开源、专注音量控制**的 macOS 菜�
 
 1. 下载上方 DMG，将 `Ez Audio Control.app` 拖入 `Applications`，推出镜像后从“应用程序”打开。
 2. 升级前暂停播放、正常退出现有 App，并保留旧 App 副本；只运行一份。
-3. 若 macOS 安全检查拦截，先确认来源与 Release 的 SHA256，再参照 [Apple 官方打开说明](https://support.apple.com/zh-cn/102445)。本版本未公证，不要关闭系统安全保护。
+3. 选择文件名含 `notarized` 的公证版 DMG，并核对 Release 提供的 `SHA256SUMS-notarized.txt`。若仍遇到安全提示，先确认版本与来源，再参照 [Apple 官方说明](https://support.apple.com/zh-cn/102445)或报告具体提示；不要关闭系统安全保护。
 
 ## 使用与权限
 

@@ -8,11 +8,11 @@ Ez Audio Control is a **free, open-source macOS menu bar tool focused on volume 
 
 [简体中文](README.md) · [MIT license](LICENSE) · [Privacy](PRIVACY.md) · [Contributing](CONTRIBUTING.md)
 
-**[Download 1.0.0 DMG (Apple Silicon)](https://github.com/sjcta/ez-audio-control/releases/download/v1.0.0/Ez-Audio-Control-1.0.0-arm64.dmg)** · [Release notes](https://github.com/sjcta/ez-audio-control/releases/tag/v1.0.0)
+**[Download 1.0.0 DMG (Apple Silicon)](https://github.com/sjcta/ez-audio-control/releases/download/v1.0.0/Ez-Audio-Control-1.0.0-arm64-notarized.dmg)** · [Release notes](https://github.com/sjcta/ez-audio-control/releases/tag/v1.0.0)
 
 Requires an **Apple Silicon Mac running macOS 14.0 or later**. Software volume for outputs without native volume control requires **macOS 14.2 or later**. Intel Macs and macOS 13 or earlier are unsupported.
 
-> The App in the DMG is Developer ID-signed but **not Apple-notarized**. macOS may block the first launch. Review the runtime requirements and validation scope below before installing.
+> **The notarized DMG and its App are Apple-notarized with stapled tickets**, retaining Developer ID signatures. A normal Internet-download confirmation may still appear. Notarization does not validate functionality or compatibility; review the runtime requirements and validation scope below.
 
 ## Features
 
@@ -53,7 +53,7 @@ Minimum versions follow the deployment target and API availability. Validation i
 
 1. Download the DMG above, drag `Ez Audio Control.app` to `Applications`, eject the image and open the App from Applications.
 2. Pause playback and quit the existing App normally before upgrading. Keep a backup and run one copy.
-3. If macOS blocks it, verify the source and Release SHA256, then consult [Apple's opening guidance](https://support.apple.com/en-us/102445). This release is not notarized; do not disable system security.
+3. Choose the DMG with `notarized` in its name and check `SHA256SUMS-notarized.txt` in the Release. If a security alert remains, verify the version/source, then consult [Apple's guidance](https://support.apple.com/en-us/102445) or report the exact alert. Do not disable system security.
 
 ## Usage and permissions
 
