@@ -10,7 +10,7 @@ enum AboutContent {
         let alert = NSAlert()
         alert.messageText = "Ez Audio Control"
         alert.informativeText = L("""
-        开发版本 \(version(bundle))
+        版本 \(version(bundle))
 
         轻量的 macOS 菜单栏音量工具。
         由 Ez Studio（Jeson）开发；软件音量模式通过 CoreAudio process tap 在内存中衰减当前输出，无需安装驱动，不读取物理麦克风，不保存音频。排错记录仅保存在本机，不自动上传。
@@ -21,6 +21,16 @@ enum AboutContent {
         本项目新增代码采用 MIT 许可；DDC 桥接改编自 m1ddc、MonitorControl（MIT）。
         应用图标采用 AI 辅助生成设计。
         """)
+        let repository = "https://github.com/sjcta/ez-audio-control"
+        let link = NSTextView(frame: NSRect(x: 0, y: 0, width: 360, height: 36))
+        link.isEditable = false; link.isSelectable = true; link.drawsBackground = false
+        link.textContainerInset = .zero
+        let content = NSMutableAttributedString(string: L("开源地址") + "\n" + repository,
+            attributes: [.font: NSFont.systemFont(ofSize: 12), .foregroundColor: NSColor.labelColor])
+        content.addAttribute(.link, value: URL(string: repository)!,
+            range: (content.string as NSString).range(of: repository))
+        link.textStorage?.setAttributedString(content)
+        alert.accessoryView = link
         if let url = bundle.url(forResource: "AppIcon", withExtension: "icns") { alert.icon = NSImage(contentsOf: url) }
         alert.addButton(withTitle: L("关闭"))
         alert.addButton(withTitle: L("开源许可"))

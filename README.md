@@ -8,7 +8,11 @@ Ez Audio Control 是一个**免费、开源、专注音量控制**的 macOS 菜�
 
 [English](README.en.md) · [MIT 许可](LICENSE) · [隐私说明](PRIVACY.md) · [参与开发](CONTRIBUTING.md)
 
-> **当前为 0.1.44 开发预览源码，尚无正式下载包，也未提供已公证的发行版。** 想试用请先查看[运行要求](#运行要求)和[从源码构建](#从源码构建)；本地构建属于开发版本。
+**[下载 1.0.0 DMG（Apple Silicon）](https://github.com/sjcta/ez-audio-control/releases/download/v1.0.0/Ez-Audio-Control-1.0.0-arm64.dmg)** · [版本说明](https://github.com/sjcta/ez-audio-control/releases/tag/v1.0.0)
+
+要求 **Apple Silicon Mac + macOS 14.0 或以上**；外接显示器等不可原生调音量的输出需要 **macOS 14.2 或以上** 才能尝试软件音量。Intel Mac 和 macOS 13 或更早版本不支持。
+
+> DMG 内 App 使用 Developer ID 签名，**尚未经过 Apple 公证**；首次打开可能被 macOS 安全检查拦截。安装前查看下面的运行要求与验证范围。
 
 ## 能做什么
 
@@ -36,12 +40,20 @@ Ez Audio Control 是一个**免费、开源、专注音量控制**的 macOS 菜�
 | 项目 | 要求 |
 | --- | --- |
 | 架构 | Apple Silicon；未提供 Intel App 构建 |
-| 系统 | 部署目标 macOS 14+；软件音量要求 macOS 14.2+ 与兼容的输出格式 |
+| macOS 14.0–14.1 | 可运行 App，支持可原生调节音量的输出；软件音量不可用 |
+| macOS 14.2 及以上 | 可尝试软件音量，需兼容输出格式和用户授予系统音频捕获许可 |
+| 已验证系统 | 开发机 macOS 27.0.1；macOS 14、15、26 尚无实机验收结论 |
 | 依赖 | 仅系统框架，无第三方运行依赖 |
 
-兼容性验证限于当前开发机、离线假设备与组件检查，不保证所有 macOS 版本、显示器或音频设备可用。
+最低版本依据 App 的部署目标与 API 可用性；已验证范围限于上述开发机、离线假设备与组件检查，不保证每个系统版本或设备均可用。
 
 **睡眠、显示器唤醒和长时间运行的恢复仍在观察。** 软件音频链路清理或恢复时声音可能短暂中断；退出或故障时原始音频可能恢复，不能把软件衰减当作硬件音量上限或听力保护。第一次试用前，请暂停播放并把外部音箱调至安全音量。
+
+## 安装
+
+1. 下载上方 DMG，将 `Ez Audio Control.app` 拖入 `Applications`，推出镜像后从“应用程序”打开。
+2. 升级前暂停播放、正常退出现有 App，并保留旧 App 副本；只运行一份。
+3. 若 macOS 安全检查拦截，先确认来源与 Release 的 SHA256，再参照 [Apple 官方打开说明](https://support.apple.com/zh-cn/102445)。本版本未公证，不要关闭系统安全保护。
 
 ## 使用与权限
 
@@ -63,7 +75,7 @@ Ez Audio Control 是一个**免费、开源、专注音量控制**的 macOS 菜�
 ./scripts/test-offline.sh
 ```
 
-App 输出至 `dist/0.1.44/Ez Audio Control.app`。构建与离线测试不会启动 App、安装驱动、写设备音量或请求音频捕获权限。`--adhoc` 仅用于本地开发；不包含发行者身份、Apple 公证或正式更新流程。也可使用 `--unsigned` 只编译。
+App 输出至 `dist/1.0.0/Ez Audio Control.app`。构建与离线测试不会启动 App、安装驱动、写设备音量或请求音频捕获权限。`--adhoc` 仅用于本地开发；不包含发行者身份、Apple 公证或正式更新流程。也可使用 `--unsigned` 只编译。
 
 构建完成后由你自行打开 App。保持安装路径和签名身份稳定有助于权限管理；开发签名变化后，macOS 可能需要你重新授权。不要通过修改 TCC 或关闭系统安全功能处理权限问题。
 

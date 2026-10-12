@@ -1,6 +1,6 @@
 # Contributing / 参与开发
 
-先阅读 [README](README.md) 和 [架构](Docs/ARCHITECTURE.md)。当前项目是开发预览；请用小范围改动解决明确问题，不把音量工具扩展为驱动安装器或音频录制器。
+先阅读 [README](README.md) 和 [架构](Docs/ARCHITECTURE.md)。当前发布版本为 1.0.0；请用小范围改动解决明确问题，不把音量工具扩展为驱动安装器或音频录制器。
 
 ## 本地验证
 

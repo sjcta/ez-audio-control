@@ -24,9 +24,10 @@
 "已连接" = "Connected";
 "已静音" = "Muted";
 "开发版" = "Development";
-"开发版本 %@\n\n轻量的 macOS 菜单栏音量工具。\n由 Ez Studio（Jeson）开发；软件音量模式通过 CoreAudio process tap 在内存中衰减当前输出，无需安装驱动，不读取物理麦克风，不保存音频。排错记录仅保存在本机，不自动上传。\n\n版权声明\n新增内容的权利归相应权利人；复用代码的版权归原作者，并保留其原始许可。\n\n本项目新增代码采用 MIT 许可；DDC 桥接改编自 m1ddc、MonitorControl（MIT）。\n应用图标采用 AI 辅助生成设计。" = "Development version %@\n\nA lightweight macOS menu bar volume tool.\nDeveloped by Ez Studio (Jeson). Software volume attenuates the current output in memory using a CoreAudio process tap. No driver is installed, no physical microphone is opened, and no audio is saved. Troubleshooting logs stay on this Mac and are not uploaded automatically.\n\nCopyright\nNew contributions belong to their respective rights holders. Adapted code retains its original copyright and license.\n\nOriginal project code is MIT-licensed. The DDC bridge adapts m1ddc and MonitorControl (MIT).\nThe app icon uses an AI-assisted design.";
+"版本 %@\n\n轻量的 macOS 菜单栏音量工具。\n由 Ez Studio（Jeson）开发；软件音量模式通过 CoreAudio process tap 在内存中衰减当前输出，无需安装驱动，不读取物理麦克风，不保存音频。排错记录仅保存在本机，不自动上传。\n\n版权声明\n新增内容的权利归相应权利人；复用代码的版权归原作者，并保留其原始许可。\n\n本项目新增代码采用 MIT 许可；DDC 桥接改编自 m1ddc、MonitorControl（MIT）。\n应用图标采用 AI 辅助生成设计。" = "Version %@\n\nA lightweight macOS menu bar volume tool.\nDeveloped by Ez Studio (Jeson). Software volume attenuates the current output in memory using a CoreAudio process tap. No driver is installed, no physical microphone is opened, and no audio is saved. Troubleshooting logs stay on this Mac and are not uploaded automatically.\n\nCopyright\nNew contributions belong to their respective rights holders. Adapted code retains its original copyright and license.\n\nOriginal project code is MIT-licensed. The DDC bridge adapts m1ddc and MonitorControl (MIT).\nThe app icon uses an AI-assisted design.";
 "开机启动" = "Launch at login";
 "开机启动设置失败：%@" = "Could not change launch at login: %@";
+"开源地址" = "Source code";
 "开源许可" = "Open-source licenses";
 "当前输出使用系统原生音量控制" = "This output uses native system volume control";
 "当前输出暂不支持调节" = "This output does not currently support volume adjustment";

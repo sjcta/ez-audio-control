@@ -8,7 +8,11 @@ Ez Audio Control is a **free, open-source macOS menu bar tool focused on volume 
 
 [简体中文](README.md) · [MIT license](LICENSE) · [Privacy](PRIVACY.md) · [Contributing](CONTRIBUTING.md)
 
-> **This is 0.1.44 development-preview source. There is no official download package or notarized release.** To try it, read the [runtime requirements](#runtime-requirements) and [build instructions](#build-from-source) first. Local builds are development artifacts.
+**[Download 1.0.0 DMG (Apple Silicon)](https://github.com/sjcta/ez-audio-control/releases/download/v1.0.0/Ez-Audio-Control-1.0.0-arm64.dmg)** · [Release notes](https://github.com/sjcta/ez-audio-control/releases/tag/v1.0.0)
+
+Requires an **Apple Silicon Mac running macOS 14.0 or later**. Software volume for outputs without native volume control requires **macOS 14.2 or later**. Intel Macs and macOS 13 or earlier are unsupported.
+
+> The App in the DMG is Developer ID-signed but **not Apple-notarized**. macOS may block the first launch. Review the runtime requirements and validation scope below before installing.
 
 ## Features
 
@@ -36,12 +40,20 @@ Free alternatives already exist; Ez Audio Control offers another choice focused 
 | Item | Requirement |
 | --- | --- |
 | Architecture | Apple Silicon; no Intel App build |
-| System | macOS 14+ deployment target; software volume needs macOS 14.2+ and a compatible output format |
+| macOS 14.0–14.1 | App runs with native writable-volume outputs; software volume is unavailable |
+| macOS 14.2 and later | Software volume requires a compatible output format and user-granted system-audio-capture permission |
+| Validated system | Development Mac on macOS 27.0.1; macOS 14, 15 and 26 have not been hardware-validated |
 | Dependencies | Apple system frameworks only |
 
-Compatibility checks are limited to development hardware, fake-device tests and component checks. Support for every macOS version, monitor or audio device is not guaranteed.
+Minimum versions follow the deployment target and API availability. Validation is limited to the development system listed above, fake devices and component checks; every OS version or device is not guaranteed to work.
 
 **Long-running, monitor-wake and sleep/wake recovery are still under observation.** Cleanup or recovery can briefly interrupt audio; unattenuated audio may return on exit or failure. Software attenuation is not a physical volume ceiling or hearing protection. Pause playback and lower external speaker volume before first use.
+
+## Installation
+
+1. Download the DMG above, drag `Ez Audio Control.app` to `Applications`, eject the image and open the App from Applications.
+2. Pause playback and quit the existing App normally before upgrading. Keep a backup and run one copy.
+3. If macOS blocks it, verify the source and Release SHA256, then consult [Apple's opening guidance](https://support.apple.com/en-us/102445). This release is not notarized; do not disable system security.
 
 ## Usage and permissions
 
@@ -63,7 +75,7 @@ After downloading or cloning the source, run the existing [build script](scripts
 ./scripts/test-offline.sh
 ```
 
-Output: `dist/0.1.44/Ez Audio Control.app`. Building and offline tests do not launch the App, install a driver, write device volume or request audio capture. Ad-hoc signing is for local development, without a distribution identity or Apple notarization. Use `--unsigned` to compile only.
+Output: `dist/1.0.0/Ez Audio Control.app`. Building and offline tests do not launch the App, install a driver, write device volume or request audio capture. Ad-hoc signing is for local development, without a distribution identity or Apple notarization. Use `--unsigned` to compile only.
 
 Open the App yourself after building. Keep one installation path and a consistent signing identity where possible; changed development signatures may require permission updates. Do not modify TCC or disable system security to work around permissions.
 

@@ -3,7 +3,7 @@ let english = CommandLine.arguments.contains("--english")
 func check(_ ok: @autoclosure () -> Bool, _ label: String) { precondition(ok(), label) }
 check(L("设置") == (english ? "Settings" : "设置"), "system/app language")
 check(AboutContent.makeAlert().buttons[0].title == (english ? "Close" : "关闭"), "about language")
-check(AboutContent.makeAlert().informativeText.hasPrefix(english ? "Development version" : "开发版本"), "multiline localization")
+check(AboutContent.makeAlert().informativeText.hasPrefix(english ? "Version" : "版本"), "multiline localization")
 check(DisplayMode.hud.title == (english ? "HUD mode" : "HUD 模式"), "settings mode")
 check(CompactControls().slider.accessibilityLabel() == (english ? "Volume percentage" : "显示器音量百分比"), "VoiceOver language")
 check(volumePercent(100) == "100%", "compact percent")
